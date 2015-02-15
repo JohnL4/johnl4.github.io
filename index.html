@@ -37,13 +37,13 @@ $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll
-  see the new branch.</p>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<p>{% for post in site.posts %}</p>
 
 <ul>
-  {% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+<li>[ {{ post.title }} ][ {{ post.url }} ]
+{% endfor %}</li>
 </ul>
 
 <h3>
