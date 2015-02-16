@@ -9,6 +9,10 @@
   doesn't have any trouble generating good html, out of the box.  Of course, I'd probably have to
   struggle to make it generate "smart" punctuation, but, hey, if I wanted that, I'd probably not be
   using org-mode.  So, there.)
+
+  Well... looks like the Jekyll processor on github /does/ actually not make the smart quotes, so I
+  just to find out how to do that on my local Jekyll server.  smart -- dash?  (Neet!  org-mode turns
+  both the ellipsis and the doubled dash into (the right) html entities!)
   
 
 * Styling posts in Jekyll
