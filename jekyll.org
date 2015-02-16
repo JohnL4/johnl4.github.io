@@ -1,5 +1,5 @@
 #+TITLE: General Jekyll Notes, Journey of a Noob
-* Turning off the "smart" punctuation
+* TODO Turning off the "smart" punctuation
 
   Look at this:
 
@@ -13,9 +13,13 @@
   Well... looks like the Jekyll processor on github /does/ actually not make the smart quotes, so I
   just to find out how to do that on my local Jekyll server.  smart -- dash?  (Neet!  org-mode turns
   both the ellipsis and the doubled dash into (the right) html entities!)
+
+* TODO Need to find a way to style for small (mobile) screens
+
+  
   
 
-* Styling posts in Jekyll
+* TODO Styling posts in Jekyll
 
   Don't know how yet.  Need layouts and stylesheets.
 
@@ -27,3 +31,8 @@
 
    In directory =stylesheets=.
    
+* TODO Github Wiki pages
+
+  Not technically part of the Jekyll journey, but definitely part of the info-sharing-with-the-world
+  journey.
+
