@@ -10,4 +10,3 @@ because it has a *ton* of learning required and setup effort (unless you're alre
 Jekyll and github-pages), so that target audience is precluded.  Developer and other technical types will probably
 already want a straight single quote mark to just frikkin *stay* that way.  Plain text, my left hind leg.  >:(
 
-

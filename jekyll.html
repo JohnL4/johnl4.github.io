@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>General Jekyll Notes, Journey of a Noob</title>
-<!-- 2015-02-16 Mon 12:21 -->
+<!-- 2015-02-16 Mon 16:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="John Lusk" />
@@ -111,6 +111,78 @@
   pre.src-haskell:before  { content: 'Haskell'; }
 /*]]>*/-->
 </style>
+
+<script type="text/javascript" src="/javascripts/org-info.js">
+/**
+ *
+ * @source: /javascripts/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in /javascripts/org-info.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in /javascripts/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "12");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "#B3F2E3");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "showall");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -165,21 +237,79 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. <span class="todo TODO">TODO</span> Turning off the "smart" punctuation</a></li>
-<li><a href="#sec-2">2. <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</a></li>
-<li><a href="#sec-3">3. <span class="todo TODO">TODO</span> Styling posts in Jekyll</a>
+<li><a href="#sec-1">1. Online class/API docs</a></li>
+<li><a href="#sec-2">2. Ruby <code>gem install jekyll-docs</code> failures</a></li>
+<li><a href="#sec-3">3. <span class="done DONE">DONE</span> Turning off the "smart" punctuation</a>
 <ul>
-<li><a href="#sec-3-1">3.1. Layouts</a></li>
-<li><a href="#sec-3-2">3.2. Stylesheets</a></li>
+<li><a href="#sec-3-1">3.1. <span class="done DONE">DONE</span> Default markdown processor is&#x2026;</a></li>
+<li><a href="#sec-3-2">3.2. Problem was entity output, not smart quoting</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. <span class="todo TODO">TODO</span> Github Wiki pages</a></li>
+<li><a href="#sec-4">4. <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</a>
+<ul>
+<li><a href="#sec-4-1">4.1. <span class="todo TODO">TODO</span> Styling org-mode output</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Styling posts in Jekyll</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Layouts</a></li>
+<li><a href="#sec-5-2">5.2. Stylesheets</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. <span class="todo TODO">TODO</span> Github Wiki pages</a></li>
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Turning off the "smart" punctuation</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Online class/API docs</h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Jekyll: <a href="http://www.rubydoc.info/github/mojombo/jekyll/Jekyll/Post">http://www.rubydoc.info/github/mojombo/jekyll/Jekyll/Post</a>
+</li>
+<li>Ruby: <a href="http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-strftime">http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-strftime</a>
+</li>
+</ul>
+
+<p>
+Maybe?  Not sure how well these docs match the versions of whatever software you download.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Ruby <code>gem install jekyll-docs</code> failures</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+If you get this error: <code>Could not find a valid gem 'jekyll-docs' (&gt;</code> 0) in any repository=, check
+to make sure you can ping <code>rubygems.org</code>.
+</p>
+
+<p>
+In the case of jekyll-docs specifically, you need to throw the <code>--pre</code> switch in (as of
+2015-02-16):
+</p>
+
+<pre class="example">
+sudo gem install jekyll-docs --pre
+</pre>
+
+<p>
+Of course, it still doesn't work.  Oh, well.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Turning off the "smart" punctuation</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 15:51]</span></span> <br  />
+    Problem was entity output <code>:as_char</code>, not smart quotes.  Github pages actually use smart quotes, if
+you look closely.
+</li>
+</ul>
+
 <p>
 Look at this:
 </p>
@@ -202,36 +332,95 @@ Well&#x2026; looks like the Jekyll processor on github <i>does</i> actually not 
 just to find out how to do that on my local Jekyll server.  smart &#x2013; dash?  (Neet!  org-mode turns
 both the ellipsis and the doubled dash into (the right) html entities!)
 </p>
-</div>
-</div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</h2>
-</div>
-
-
-
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Styling posts in Jekyll</h2>
-<div class="outline-text-2" id="text-3">
 <p>
-Don't know how yet.  Need layouts and stylesheets.
+Here's a link:
+<a href="http://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll">http://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll</a>
 </p>
 </div>
 
 <div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Layouts</h3>
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Default markdown processor is&#x2026;</h3>
 <div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 15:50]</span></span>
+</li>
+</ul>
+
 <p>
-In directory <code>_layouts</code>.
+&#x2026;apparently, <b>kramdown</b>.  See <a href="http://jekyllrb.com/docs/configuration/#default-configuration">http://jekyllrb.com/docs/configuration/#default-configuration</a>.
 </p>
 </div>
 </div>
 
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Stylesheets</h3>
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Problem was entity output, not smart quoting</h3>
 <div class="outline-text-3" id="text-3-2">
+<p>
+Looks like the fix is as follows:
+</p>
+
+<pre class="example">
+kramdown:
+  entity_output: :symbolic
+  # smart_quotes: ["apos", "apos", "quot", "quot"]
+</pre>
+
+<p>
+The problem isn't the smart quotes, it's the fact that entity output defaults to <code>:as_char</code>,
+(<a href="http://kramdown.gettalong.org/rdoc/Kramdown/Options.html">http://kramdown.gettalong.org/rdoc/Kramdown/Options.html</a>) which generates some very odd stuff if
+your file is just plain text (ASCII)?
+</p>
+
+<p>
+Looks like the characters served up by the github servers are interpreted correctly while the same
+characters off the local jekyll server get interpreted differently.  Different page
+languages/encodings?  UTF-8 vs ASCII?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+If you go through the github auto page generation drill, you can choose a style, which will result
+in a stylesheet being stuffed into your repository.  Said stylesheet has small-screen settings, so
+figuring out how to style posts should help solve this problem.
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Styling org-mode output</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+If we can figure this out, then maybe we can style org-mode output.  
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Styling posts in Jekyll</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Don't know how yet.  Need layouts and stylesheets.
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Layouts</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+In directory <code>_layouts</code>.  Use Liquid tag <code>{{ content }}</code> to put post content into your template.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Stylesheets</h3>
+<div class="outline-text-3" id="text-5-2">
 <p>
 In directory <code>stylesheets</code>.
 </p>
@@ -239,9 +428,9 @@ In directory <code>stylesheets</code>.
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Github Wiki pages</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> Github Wiki pages</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Not technically part of the Jekyll journey, but definitely part of the info-sharing-with-the-world
 journey.
@@ -251,7 +440,7 @@ journey.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: John Lusk</p>
-<p class="date">Created: 2015-02-16 Mon 12:21</p>
+<p class="date">Created: 2015-02-16 Mon 16:38</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

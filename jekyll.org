@@ -1,5 +1,31 @@
 #+TITLE: General Jekyll Notes, Journey of a Noob
-* TODO Turning off the "smart" punctuation
+#+COLUMNS: %8TODO %10WHO %3PRIORITY %3HOURS(HRS) %80ITEM
+#+INFOJS_OPT: view:showall toc:t ltoc:nil path:/javascripts/org-info.js mouse:#B3F2E3
+
+* Online class/API docs
+
+  - Jekyll: http://www.rubydoc.info/github/mojombo/jekyll/Jekyll/Post
+  - Ruby: http://ruby-doc.org/stdlib-2.2.0/libdoc/date/rdoc/Date.html#method-i-strftime
+
+  Maybe?  Not sure how well these docs match the versions of whatever software you download.
+
+* Ruby =gem install jekyll-docs= failures
+
+  If you get this error: =Could not find a valid gem 'jekyll-docs' (>= 0) in any repository=, check
+  to make sure you can ping =rubygems.org=.
+
+  In the case of jekyll-docs specifically, you need to throw the =--pre= switch in (as of
+  2015-02-16):
+
+  : sudo gem install jekyll-docs --pre
+
+  Of course, it still doesn't work.  Oh, well.
+
+* DONE Turning off the "smart" punctuation
+  CLOSED: [2015-02-16 Mon 15:51]
+  - CLOSING NOTE [2015-02-16 Mon 15:51] \\
+    Problem was entity output =:as_char=, not smart quotes.  Github pages actually use smart quotes, if
+    you look closely.
 
   Look at this:
 
@@ -14,18 +40,50 @@
   just to find out how to do that on my local Jekyll server.  smart -- dash?  (Neet!  org-mode turns
   both the ellipsis and the doubled dash into (the right) html entities!)
 
+  Here's a link:
+  http://stackoverflow.com/questions/25596792/how-do-i-turn-off-smart-quotes-in-jekyll
+
+** DONE Default markdown processor is...
+   CLOSED: [2015-02-16 Mon 15:50]
+   - CLOSING NOTE [2015-02-16 Mon 15:50]
+
+   ...apparently, *kramdown*.  See http://jekyllrb.com/docs/configuration/#default-configuration.
+
+** Problem was entity output, not smart quoting
+   
+   Looks like the fix is as follows:
+   
+   #+BEGIN_EXAMPLE
+   kramdown:
+     entity_output: :symbolic
+     # smart_quotes: ["apos", "apos", "quot", "quot"]
+   #+END_EXAMPLE
+   
+   The problem isn't the smart quotes, it's the fact that entity output defaults to =:as_char=,
+   (http://kramdown.gettalong.org/rdoc/Kramdown/Options.html) which generates some very odd stuff if
+   your file is just plain text (ASCII)?
+   
+   Looks like the characters served up by the github servers are interpreted correctly while the same
+   characters off the local jekyll server get interpreted differently.  Different page
+   languages/encodings?  UTF-8 vs ASCII?
+
 * TODO Need to find a way to style for small (mobile) screens
 
-  
-  
+  If you go through the github auto page generation drill, you can choose a style, which will result
+  in a stylesheet being stuffed into your repository.  Said stylesheet has small-screen settings, so
+  figuring out how to style posts should help solve this problem.
 
-* TODO Styling posts in Jekyll
+** TODO Styling org-mode output
+
+   If we can figure this out, then maybe we can style org-mode output.  
+
+* IN-PROGRESS Styling posts in Jekyll
 
   Don't know how yet.  Need layouts and stylesheets.
 
 ** Layouts
 
-   In directory =_layouts=.
+   In directory =_layouts=.  Use Liquid tag ={{ content }}= to put post content into your template.
 
 ** Stylesheets
 

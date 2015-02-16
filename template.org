@@ -1,0 +1,9 @@
+#+TITLE: Notes for <Project Foo>
+#+COLUMNS: %8TODO %10WHO %3PRIORITY %3HOURS(HRS) %80ITEM
+#+INFOJS_OPT: view:showall toc:t ltoc:nil path:../org-info.js mouse:#B3F2E3
+* Overview 
+* Reproduction 
+* Current Architecture/Issues 
+* Fix 
+* Checkin 
+* Notes 
