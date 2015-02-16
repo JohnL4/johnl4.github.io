@@ -1,3 +1,6 @@
+---
+layout: post
+---
 Dis a test body
 
 *bold*

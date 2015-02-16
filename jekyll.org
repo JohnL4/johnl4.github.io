@@ -1,0 +1,12 @@
+* Styling posts in Jekyll
+
+  Don't know how yet.  Need layouts and stylesheets.
+
+** Layouts
+
+   In directory =_layouts=.
+
+** Stylesheets
+
+   In directory =stylesheets=.
+   
