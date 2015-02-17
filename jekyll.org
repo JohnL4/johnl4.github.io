@@ -51,7 +51,7 @@
 
 ** Problem was entity output, not smart quoting
    
-   Looks like the fix is as follows:
+   Looks like the fix is as follows (in your =_config.yml=):
    
    #+BEGIN_EXAMPLE
    kramdown:
