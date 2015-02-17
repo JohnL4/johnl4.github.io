@@ -120,4 +120,7 @@
   Well, uh... embarassingly easy.  For your project, there's a link on the right-side toolbar:
 
   [[file:images/github-wiki-link.png]]
+
+  Here.  https://github.com/JohnL4/johnl4.github.io/wiki. Knock yourself out.
+
   
