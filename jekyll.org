@@ -67,19 +67,34 @@
    characters off the local jekyll server get interpreted differently.  Different page
    languages/encodings?  UTF-8 vs ASCII?
 
-* TODO Need to find a way to style for small (mobile) screens
+* DONE Need to find a way to style for small (mobile) screens
+  CLOSED: [2015-02-16 Mon 18:58]
+  - CLOSING NOTE [2015-02-16 Mon 18:58] \\
+    Gave up.  Works fine on Android, not on iPhone.
 
   If you go through the github auto page generation drill, you can choose a style, which will result
   in a stylesheet being stuffed into your repository.  Said stylesheet has small-screen settings, so
   figuring out how to style posts should help solve this problem.
 
-** TODO Styling org-mode output
+** DONE Styling org-mode output
+   CLOSED: [2015-02-16 Mon 18:59]
+   - CLOSING NOTE [2015-02-16 Mon 18:59] \\
+     Use something like the following at the top of your org-mode file:
+     
+        : #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style1.css" />
+     
+     Or you could just not bother.
 
    If we can figure this out, then maybe we can style org-mode output.  
 
-* IN-PROGRESS Styling posts in Jekyll
+* DONE Styling posts in Jekyll
+  CLOSED: [2015-02-16 Mon 18:55]
+  - CLOSING NOTE [2015-02-16 Mon 18:55]
 
   Don't know how yet.  Need layouts and stylesheets.
+
+  Not so hard, in theory.  In =_layouts=, build an html page, reference whatever styles you need
+  (declaring them in =stylesheets= if you need to).
 
 ** Layouts
 
@@ -89,8 +104,20 @@
 
    In directory =stylesheets=.
    
-* TODO Github Wiki pages
+** TODO How to get CSS class names into the output of the markdown compiler
+
+   Pre-defined github styles have specific CSS classes that are where the good stuff really
+   happens.  If you just invoke the style in the output of a markdown processor (e.g., for posts),
+   you'll get bad results, unless you can find a way to tie in to the CSS classes.
+
+* DONE Github Wiki pages
+  CLOSED: [2015-02-16 Mon 19:12]
+  - CLOSING NOTE [2015-02-16 Mon 19:12]
 
   Not technically part of the Jekyll journey, but definitely part of the info-sharing-with-the-world
   journey.
 
+  Well, uh... embarassingly easy.  For your project, there's a link on the right-side toolbar:
+
+  [[file:images/github-wiki-link.png]]
+  

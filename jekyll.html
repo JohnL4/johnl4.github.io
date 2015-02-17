@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>General Jekyll Notes, Journey of a Noob</title>
-<!-- 2015-02-16 Mon 18:08 -->
+<!-- 2015-02-16 Mon 19:12 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="John Lusk" />
@@ -109,61 +109,6 @@
   pre.src-xml:before  { content: 'XML'; }
   pre.src-css:before  { content: 'CSS'; }
   pre.src-haskell:before  { content: 'Haskell'; }
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 640px) {
-  body {
-    font-size:14px;
-  }
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-  font-size: 32px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
-}
-
 /*]]>*/-->
 </style>
 
@@ -300,18 +245,19 @@ for the JavaScript code in this tag.
 <li><a href="#sec-3-2">3.2. Problem was entity output, not smart quoting</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</a>
+<li><a href="#sec-4">4. <span class="done DONE">DONE</span> Need to find a way to style for small (mobile) screens</a>
 <ul>
-<li><a href="#sec-4-1">4.1. <span class="todo TODO">TODO</span> Styling org-mode output</a></li>
+<li><a href="#sec-4-1">4.1. <span class="done DONE">DONE</span> Styling org-mode output</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Styling posts in Jekyll</a>
+<li><a href="#sec-5">5. <span class="done DONE">DONE</span> Styling posts in Jekyll</a>
 <ul>
 <li><a href="#sec-5-1">5.1. Layouts</a></li>
 <li><a href="#sec-5-2">5.2. Stylesheets</a></li>
+<li><a href="#sec-5-3">5.3. <span class="todo TODO">TODO</span> How to get CSS class names into the output of the markdown compiler</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6. <span class="todo TODO">TODO</span> Github Wiki pages</a></li>
+<li><a href="#sec-6">6. <span class="done DONE">DONE</span> Github Wiki pages</a></li>
 </ul>
 </div>
 </div>
@@ -437,8 +383,14 @@ languages/encodings?  UTF-8 vs ASCII?
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Need to find a way to style for small (mobile) screens</h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Need to find a way to style for small (mobile) screens</h2>
 <div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 18:58]</span></span> <br  />
+    Gave up.  Works fine on Android, not on iPhone.
+</li>
+</ul>
+
 <p>
 If you go through the github auto page generation drill, you can choose a style, which will result
 in a stylesheet being stuffed into your repository.  Said stylesheet has small-screen settings, so
@@ -447,8 +399,22 @@ figuring out how to style posts should help solve this problem.
 </div>
 
 <div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Styling org-mode output</h3>
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Styling org-mode output</h3>
 <div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 18:59]</span></span> <br  />
+     Use something like the following at the top of your org-mode file:
+
+<pre class="example">
+#+HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="style1.css" /&gt;
+</pre>
+
+<p>
+Or you could just not bother.
+</p>
+</li>
+</ul>
+
 <p>
 If we can figure this out, then maybe we can style org-mode output.  
 </p>
@@ -457,10 +423,20 @@ If we can figure this out, then maybe we can style org-mode output.
 </div>
 
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Styling posts in Jekyll</h2>
+<h2 id="sec-5"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> Styling posts in Jekyll</h2>
 <div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 18:55]</span></span>
+</li>
+</ul>
+
 <p>
 Don't know how yet.  Need layouts and stylesheets.
+</p>
+
+<p>
+Not so hard, in theory.  In <code>_layouts</code>, build an html page, reference whatever styles you need
+(declaring them in <code>stylesheets</code> if you need to).
 </p>
 </div>
 
@@ -481,21 +457,47 @@ In directory <code>stylesheets</code>.
 </p>
 </div>
 </div>
+
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> How to get CSS class names into the output of the markdown compiler</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Pre-defined github styles have specific CSS classes that are where the good stuff really
+happens.  If you just invoke the style in the output of a markdown processor (e.g., for posts),
+you'll get bad results, unless you can find a way to tie in to the CSS classes.
+</p>
+</div>
+</div>
 </div>
 
 <div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> Github Wiki pages</h2>
+<h2 id="sec-6"><span class="section-number-2">6</span> <span class="done DONE">DONE</span> Github Wiki pages</h2>
 <div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>CLOSING NOTE <span class="timestamp-wrapper"><span class="timestamp">[2015-02-16 Mon 19:12]</span></span>
+</li>
+</ul>
+
 <p>
 Not technically part of the Jekyll journey, but definitely part of the info-sharing-with-the-world
 journey.
 </p>
+
+<p>
+Well, uh&#x2026; embarassingly easy.  For your project, there's a link on the right-side toolbar:
+</p>
+
+
+<div class="figure">
+<p><img src="images/github-wiki-link.png" alt="github-wiki-link.png" />
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: John Lusk</p>
-<p class="date">Created: 2015-02-16 Mon 18:08</p>
+<p class="date">Created: 2015-02-16 Mon 19:12</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
