@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>General Jekyll Notes, Journey of a Noob</title>
-<!-- 2015-02-20 Fri 21:57 -->
+<!-- 2015-02-20 Fri 23:11 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="John Lusk" />
@@ -103,16 +103,18 @@
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
   p.verse { margin-left: 3% }
-  pre.src, pre.example {
-      background-color: #F3F5F7;
-      font-family: monospace, monospace;
-      font-size: 1em;
-      }
+  pre.src, pre.example { background-color: #F3F5F7; }
   pre.src-csharp:before  { content: 'C#'; }
   pre.src-vbnet:before  { content: 'VB.Net'; }
   pre.src-xml:before  { content: 'XML'; }
   pre.src-css:before  { content: 'CSS'; }
   pre.src-haskell:before  { content: 'Haskell'; }
+  @media screen and (max-width: 800px) {
+      pre.src, pre.example { font-size: 120%; background-color: #ffbbbb; }
+  }
+   @media screen and (max-width: 1000px) {
+      pre.src, pre.example { font-size: 120%; background-color: #aabbff; }
+   }
 /*]]>*/-->
 </style>
 
@@ -504,7 +506,7 @@ Here.  <a href="https://github.com/JohnL4/johnl4.github.io/wiki">https://github.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: John Lusk</p>
-<p class="date">Created: 2015-02-20 Fri 21:57</p>
+<p class="date">Created: 2015-02-20 Fri 23:11</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
