@@ -2,6 +2,29 @@
 #+COLUMNS: %8TODO %10WHO %3PRIORITY %3HOURS(HRS) %80ITEM
 #+INFOJS_OPT: view:showall toc:t ltoc:nil path:/javascripts/org-info.js mouse:#B3F2E3
 
+* Setup on Windows, to add a new post
+
+  - Initial setup
+    - Install Ruby.
+    - Install the Ruby DevKit.
+    - Modify your path to include both Ruby's and the DevKit's =bin= directories:
+      - PowerShell:
+        : $env:PATH="$env:PATH;c:\Ruby22-x64\bin;c:\Ruby2-x64-DevKit\bin"
+    - =gem install jekyll=
+  - Use
+    - Modify path to include both Ruby's and the DevKit's =bin= directories (as above).
+    - =cd= to your Jekyll web site (pulled down from Github, e.g., GitHub's =johnl4.github.io=
+      project).
+    - =jekyll build= to build your static content.
+    - =jekyll serve --watch= to serve your content.
+      - Content is available at http://localhost:4000, by default (but the url is printed on stdout
+        by =jekyll serve=)
+    - Write a new post in the =_posts= directory.  Start with YYYY-MM-DD date and end with
+      =.markdown= suffix. Separate words with hyphens.
+    - This particular file (=jekyll.org=, at this moment) must be manually converted to html via
+      org-mode's "export html" command.  Jekyll doesn't do it.
+    - Normal GitHub commit/push procedures to get this stuff shipped up to GitHub.
+
 * Online class/API docs
 
   - Jekyll: http://www.rubydoc.info/github/mojombo/jekyll/Jekyll/Post
