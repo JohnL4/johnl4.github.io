@@ -1,3 +1,7 @@
+---
+excerpt: Sum project ideas
+---
+
 Sum Project Ideas
 =================
 

@@ -1,3 +1,7 @@
+---
+excerpt: Deploying to an Amazon S3 bucket
+---
+
 Deploying to an Amazon S3 bucket
 ================================
 
@@ -17,3 +21,8 @@ Why, _yes_, there does indeed appear to be!
 [http://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html](http://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html)
 
 (More later, I hope.)
+
+...
+
+Ok, now it's later, but I can't figure this out using the PowerShell tools.  I'll have to try again later, from my Linux
+machine.  Tools are available here: [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/).
