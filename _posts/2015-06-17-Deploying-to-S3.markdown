@@ -26,3 +26,22 @@ Why, _yes_, there does indeed appear to be!
 
 Ok, now it's later, but I can't figure this out using the PowerShell tools.  I'll have to try again later, from my Linux
 machine.  Tools are available here: [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/).
+
+-----
+
+Ok, now it's a whole day later, but I've figured it out.
+
+Install the AWS Linux tools.
+
+`aws config`
+
+Enter your data.  You can use an Amazon IAM user.  I'd select output format of "text" (default is "json").
+
+(IAM is Identity and Access Management).
+
+After that, `cd` to your source directory and knock yourself out:
+
+    for f in gradient-data.js gradient-editor.html gradient-editor.css; do
+      aws s3 cp $f s3://JohnLuskPublic/GradientEditorWeb/$f
+    done
+
