@@ -3,3 +3,11 @@ timezone: America/New_York
 kramdown:
    entity_output: :symbolic
    # smart_quotes: ["apos", "apos", "quot", "quot"]
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

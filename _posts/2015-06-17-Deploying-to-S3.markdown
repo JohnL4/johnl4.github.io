@@ -1,10 +1,10 @@
 ---
 excerpt: Deploying to an Amazon S3 bucket
+# layout: post
 ---
 
 Deploying to an Amazon S3 bucket
 ================================
-
 
 So, I currently have a public folder, reachable at http://s3.amazonaws.com/_PublicFolderName_.  (I wonder if I should
 change the name of that folder to something that's not my name?)
