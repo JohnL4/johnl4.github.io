@@ -1,0 +1,14 @@
+body { margin-left: 7%; }
+
+/* h1 is doc title */
+
+h1 { margin-left: -6%; text-align: center; text-decoration: underline; }
+
+h2, h3 { margin-left: -6%; }
+
+h4 { margin-left: -3%; }
+
+h5, h6 { font-size: 1em; }
+
+pre { border: 1px solid silver; margin-left: 3em; padding: 0.8em; }
+
