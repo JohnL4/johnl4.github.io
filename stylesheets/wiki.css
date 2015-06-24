@@ -18,7 +18,7 @@ pre { border: 1px solid silver; margin-left: 3em; margin-right: 1em; padding: 0.
       and (min-device-width: 361px)
       and (orientation: portrait) {
 
-   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid green; }
+   pre { font-size: 2em; margin-left: 1.5em; margin-right: 0.5em; border: 2px solid green; }
 
 }
 
@@ -27,6 +27,6 @@ pre { border: 1px solid silver; margin-left: 3em; margin-right: 1em; padding: 0.
       and (max-device-width: 360px)
       and (orientation: portrait) {
 
-   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid maroon; }
+   pre { font-size: 2em; margin-left: 1.5em; margin-right: 0.5em; border: 2px solid maroon; }
 
 }
