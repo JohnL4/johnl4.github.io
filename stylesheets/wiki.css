@@ -12,20 +12,21 @@ h5, h6 { font-size: 1em; }
 
 pre { border: 1px solid silver; margin-left: 3em; padding: 0.8em; }
 
+/* HTC One M8 */
+@media screen
+      and (max-width: 599px)
+      and (orientation: portrait) {
+
+   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid lime; }
+
+}
+
 /* Nexus 7 */
 @media screen
-      and (min-width: 640px)
+      and (min-width: 600px)
       and (orientation: portrait) {
 
    pre { font-size: 2em; margin-left: 1.5em; border: 2px solid red; }
 
 }
 
-/* HTC One M8 */
-@media screen
-      and (min-width: 380px)
-      and (orientation: portrait) {
-
-   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid lime; }
-
-}
