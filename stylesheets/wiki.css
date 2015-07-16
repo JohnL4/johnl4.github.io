@@ -10,23 +10,21 @@ h4 { margin-left: -3%; }
 
 h5, h6 { font-size: 1em; }
 
-pre { border: 1px solid silver; margin-left: 3em; padding: 0.8em; }
+pre { border: 1px solid silver; margin-left: 3em; margin-right: 1em; padding: 0.8em; }
 
 /* HTC One M8 */
 @media screen
-      and (max-width: 599px)
+      and (max-device-width: 640px)
+      and (min-device-width: 361px)
       and (orientation: portrait) {
 
-   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid lime; }
-
+   pre { font-size: 2em; margin-left: 1.5em; margin-right: 0.5em; border: 2px solid green; }
 }
 
 /* Nexus 7 */
 @media screen
-      and (min-width: 600px)
+      and (max-device-width: 360px)
       and (orientation: portrait) {
 
-   pre { font-size: 2em; margin-left: 1.5em; border: 2px solid red; }
-
+   pre { font-size: 2em; margin-left: 1.5em; margin-right: 0.5em; border: 2px solid maroon; }
 }
-
