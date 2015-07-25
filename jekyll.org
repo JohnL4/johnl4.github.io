@@ -146,3 +146,37 @@
   Here.  https://github.com/JohnL4/johnl4.github.io/wiki. Knock yourself out.
 
   
+* Miscellaneous Jekyll/Liquid Tricks
+
+** Better date formatting: =| date_to_string=
+
+   So, for the longest time, I had the following note at the bottom of my =index.markdown= page:
+
+   #+BEGIN_EXAMPLE
+   (Note: can't do something like `\{\{ post.date.strftime( "%Y-%m-%d (%a)") \}\}` here.  Comes out blank.)
+   #+END_EXAMPLE
+
+   It turns out you just need a filter, a la http://jekyllrb.com/docs/templates/#filters.
+
+   So, now the =index.markdown= page can look like this:
+
+   #+BEGIN_EXAMPLE
+   {% for post in site.posts %}
+      - {{ post.date | date_to_string }} - [{{ post.title }}]({{ post.url }}) ({{ post.tags }})
+
+        {{ post.excerpt }}
+   {% endfor %}
+   #+END_EXAMPLE
+
+** Adding Disqus commenting
+
+   First, go to Disqus.com and get yourself set up.  Try these links:
+
+   - https://disqus.com/admin/create/
+   - https://disqus.com/websites/
+
+   Or you could click on the "Settings" icon (looks like a gear) and explore from there.
+
+   Once you get to the HTML code you need to add Disqus (currently (<2015-07-25 Sat>) under
+   "Universal Code"), you edit the appropriate file under the =_layouts= folder (=post.html=, in my
+   case), and you should be good to go!

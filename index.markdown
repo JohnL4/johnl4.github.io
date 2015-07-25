@@ -19,9 +19,8 @@ Ma Blog
 Here.  Knock yourself out.  Not much to it, so far:
 
 {% for post in site.posts %}
-   - {{ post.date }} - [{{ post.title }}]({{ post.url }}) ({{ post.tags }})
+   - {{ post.date | date_to_string }} - [{{ post.title }}]({{ post.url }}) ({{ post.tags }})
 
      {{ post.excerpt }}
 {% endfor %}
 
-(Note: can't do something like `\{\{ post.date.strftime( "%Y-%m-%d (%a)") \}\}` here.  Comes out blank.)
