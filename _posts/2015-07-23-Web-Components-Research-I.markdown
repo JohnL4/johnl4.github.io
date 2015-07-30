@@ -24,3 +24,6 @@ Other things of interest:
 * D3 -- graphics in browser -- [http://d3js.org/](http://d3js.org/)
 * Postman -- debugging (?)
 * Web Components Tester (automated testing)
+* Tracer
+* Babel (or whatever. Babyl? Babl?)
+* ES6 namespaces
