@@ -27,3 +27,7 @@ Other things of interest:
 * Tracer
 * Babel (or whatever. Babyl? Babl?)
 * ES6 namespaces
+* Flexbox
+* Firebase
+* Local storage (browser, HTML5?)
+* Firebase
