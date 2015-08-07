@@ -16,7 +16,7 @@ Use four browser features:
 
 * Shadow DOM
 * custom elements
-* HTML imports
+* HTML imports -- Note that this is (apparently) only implemented by Google (in Chrome)
 * HTML templates?
 
 Other things of interest:
@@ -31,3 +31,4 @@ Other things of interest:
 * Firebase
 * Local storage (browser, HTML5?)
 * Firebase
+* Gradle
