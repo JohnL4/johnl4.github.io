@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: homepage
 title: John's Blog And Stuff
 ---
 
