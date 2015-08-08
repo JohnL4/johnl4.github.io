@@ -15,4 +15,5 @@ might actually be the best bet.
 Or I could find a way to make a zillion little Jekyll files here in another folder,
 and figure out how to refer to them.
 
-If I take the latter approach, is searchability any better?
+If I take the latter approach, is searchability any better? Apparently so.  Check this out:
+[https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=stylesheet%20site%3Ajohnl4.github.io&es_th=1](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=stylesheet%20site%3Ajohnl4.github.io&es_th=1)
