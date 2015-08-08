@@ -17,3 +17,5 @@ and figure out how to refer to them.
 
 If I take the latter approach, is searchability any better? Apparently so.  Check this out:
 [https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=stylesheet%20site%3Ajohnl4.github.io&es_th=1](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=stylesheet%20site%3Ajohnl4.github.io&es_th=1)
+
+Or maybe I should just continue to use Evernote, but better.
