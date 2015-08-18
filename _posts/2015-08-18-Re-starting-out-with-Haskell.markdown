@@ -62,6 +62,16 @@ Editing, IDEs
 Haskell doesn't really have slick IDEs, but you can probably get pretty close with your favorite editor.
 Mine happens to be emacs [haskell-mode](https://github.com/haskell/haskell-mode).
 
+GHCi
+----
+
+The interactive interpreter is going to be handy for debugging code, so here's the minimum you need to start running it:
+
+* `:quit` to quit
+* `:help` to get help
+* `:load` to load a Haskell file.  Strictly speaking this isn't the minimum you need to know, but you'll start off
+    with this command most of the time.
+
 Primary References
 ------------------
 
