@@ -56,6 +56,12 @@ Here's a "meta-tutorial", really, a collection of tutorial references:
 And, finally, from the above meta-tutorial, this, which is supposedly more condensed than Learn You a Haskell:
 [http://www.seas.upenn.edu/~cis194/lectures.html](http://www.seas.upenn.edu/~cis194/lectures.html).
 
+Editing, IDEs
+-------------
+
+Haskell doesn't really have slick IDEs, but you can probably get pretty close with your favorite editor.
+Mine happens to be emacs [haskell-mode](https://github.com/haskell/haskell-mode).
+
 Primary References
 ------------------
 
