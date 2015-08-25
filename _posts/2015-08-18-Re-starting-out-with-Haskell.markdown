@@ -77,3 +77,39 @@ Primary References
 
 ...are here: [http://downloads.haskell.org/~ghc/7.8.3/docs/html/](http://downloads.haskell.org/~ghc/7.8.3/docs/html/).
 (Every version has something, so you can be very specific as to which version's documentation you read.)
+
+[Haskell Report](https://www.haskell.org/onlinereport/haskell2010/)
+
+General Notes
+-------------
+
+### Directory Walking
+
+~~~
+import Control.Monad (forM)
+import System.Directory (doesDirectoryExist, getDirectoryContents)
+import System.FilePath ((</>))
+
+getRecursiveContents :: FilePath -> IO [FilePath]
+
+getRecursiveContents topdir = do
+  names <- getDirectoryContents topdir
+  let properNames = filter (`notElem` [".", ".."]) names
+  paths <- forM properNames $ \name -> do
+    let path = topdir </> name
+    isDirectory <- doesDirectoryExist path
+    if isDirectory
+      then getRecursiveContents path
+      else return [path]
+  return (concat paths)
+~~~
+
+There's probably a better way to do this than a for-loop, but...
+
+From _RWH_, chapter 8: "The unfamiliar forM function above acts a little like a “for” loop: it maps its second argument (an action) over its first (a list), and returns the list of results."
+
+**</>**: An operator that joins two strings with a filepath separator.
+
+### Sample Code
+
+[https://github.com/JohnL4/HaskellXamlScan](https://github.com/JohnL4/HaskellXamlScan)
