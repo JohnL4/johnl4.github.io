@@ -36,3 +36,13 @@ The Solution
   Note that, for some reason, this search works, but the following one doesn't:
 
         site:github.com/JohnL4/johnl4.github.io/wiki markup
+
+  So, there are a couple of possibilities to fix the "search" issue:
+
+    * Submit your url to Google, via [https://www.google.com/webmasters/tools/submit-url](https://www.google.com/webmasters/tools/submit-url).
+    * Register your Very Own Website (GitHub jekyll blog) and register it via [https://www.google.com/webmasters/tools/home?hl=en](https://www.google.com/webmasters/tools/home?hl=en) (then
+        click on "Add a Property").
+    * Use a browser plugin.  Then, at least *you* can search your own wiki:
+        * [https://github.com/linyows/github-wiki-search](https://github.com/linyows/github-wiki-search)
+        * [https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en](https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en)
+          (This one slightly bollixes things up.)
