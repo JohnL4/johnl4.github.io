@@ -17,4 +17,4 @@ Some Project Ideas
     ([http://www.diku.dk/~torbenm/Planet/](http://www.diku.dk/~torbenm/Planet/)) truncates elevation data at some max,
     which makes coloring desert world elevations problematic (since they start with a positive elevation bias, and wind
     up with a lot of max-elevation values))
-* Hakyll, source = org-mode, dest = differential upload to Amazon S3.
+* Hakyll, source = org-mode or TWiki markup, dest = differential upload to Amazon S3.
