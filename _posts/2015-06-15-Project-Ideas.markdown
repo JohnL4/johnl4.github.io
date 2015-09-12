@@ -1,8 +1,8 @@
 ---
-excerpt: Sum project ideas
+excerpt: Some project ideas
 ---
 
-Sum Project Ideas
+Some Project Ideas
 =================
 
 * First National Bank of Dad
@@ -17,3 +17,4 @@ Sum Project Ideas
     ([http://www.diku.dk/~torbenm/Planet/](http://www.diku.dk/~torbenm/Planet/)) truncates elevation data at some max,
     which makes coloring desert world elevations problematic (since they start with a positive elevation bias, and wind
     up with a lot of max-elevation values))
+* Hakyll, source = org-mode, dest = differential upload to Amazon S3.
