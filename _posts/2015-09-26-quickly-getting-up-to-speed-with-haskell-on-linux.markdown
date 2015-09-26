@@ -23,7 +23,7 @@ Using Synaptic to manage packages, I installed "haskell platform", but no joy. I
 it's possible that it just installed 7.6 on top of itself.
 
 So, in Synaptic, I had to select all things Haskell (actually, I just selected my installed ghc, and things went ok
-after that) and uninstall.
+after that) and uninstalled.
 
 Then, I went to the Haskell page (http://haskell.org) and selected **generic** Linux machine (not Mint, since that seems
 to only get an outdated package).  It downloaded a monster compressed tarball for 7.10.2a.  Right beside
@@ -55,7 +55,7 @@ various `import` statements.
 So, using [Hoogle](https://www.haskell.org/hoogle/), I typed in the names of the packages I wanted (`System.IO.Strict`
 and `Text.Regex.TDFA`), and found out they were in packages `strict` and `regex-tdfa`.
 
-(There were actually two strict i/o packages I had to decided between, `strict` and `strict-io`. `strict-io` seemed to
+(There were actually two strict i/o packages I had to decide between, `strict` and `strict-io`. `strict-io` seemed to
 be available only for NixOS (whatever that is), so I picked the one that was available for more platforms, including
 Debian.)
 
