@@ -18,7 +18,11 @@ h4 { margin-left: -3%; }
 
 h5, h6 { font-size: 1em; }
 
-pre { /* border: 1px solid silver; */ margin-left: 3em; margin-right: 1em; padding: 0.8em; }
+pre { 
+    /* border: 1px solid silver; */ 
+    /* font-family: 'Inconsolata', monospace; */
+    margin-left: 3em; margin-right: 1em; padding: 0.8em; 
+}
 
 /* HTC One M8 */
 @media screen

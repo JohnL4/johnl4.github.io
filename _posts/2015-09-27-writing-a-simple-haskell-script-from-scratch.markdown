@@ -59,3 +59,12 @@ myLength [] = 0
 myLength (_:xs) = 1 + (myLength xs)
 ~~~
 
+So, that `<-`: it **"binds"** the result of `getContents` to `allInput`.  That doesn't mean it actually *evaluates*
+`getContents`, it just binds it.
+
+I really don't get it yet, but the i/o action is only _performed_ when `allInput` is evaluated, as in `(lines
+allInput)`.  `lines` is a pure function (certainly, `myLength` is, because we write it just below).  I think of `<-` as
+"de-IO-ing" the i/o operation, meaning, we take that `IO` impurity off the operation, allowing its results to be used in
+a pure function.
+
+Check back with me later on the accuracy of that statement.
