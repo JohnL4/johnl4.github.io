@@ -59,12 +59,27 @@ myLength [] = 0
 myLength (_:xs) = 1 + (myLength xs)
 ~~~
 
-So, that `<-`: it **"binds"** the result of `getContents` to `allInput`.  That doesn't mean it actually *evaluates*
+So, `<-` **"binds"** the result of `getContents` to `allInput`.  That doesn't mean it actually *evaluates*
 `getContents`, it just binds it.
 
-I really don't get it yet, but the i/o action is only _performed_ when `allInput` is evaluated, as in `(lines
-allInput)`.  `lines` is a pure function (certainly, `myLength` is, because we write it just below).  I think of `<-` as
-"de-IO-ing" the i/o operation, meaning, we take that `IO` impurity off the operation, allowing its results to be used in
-a pure function.
+I really don't get it yet, but the i/o action is only _performed_ when the thing it's bound to (`allInput`) is
+evaluated.  Note that, due to laziness, this evaulation doesn't actually happen until (really, probably) the following
+`putStrLn` is called.  None of these functions need to be evaluated until the sequential `do` operator in `main` forces
+them to be: all of `lines`, `myLength`, `show` and the `++` operators are probably lazy, not actually doing anything
+until they absolutely have to.  Note that `lines` is a pure function (as is `myLength`).
+
+I think of `<-` as "de-IO-ing" the i/o operation, meaning, we take that `IO` impurity off the operation, allowing its
+results to be used in a pure function.
 
 Check back with me later on the accuracy of that statement.
+
+Various tricks and idioms
+-------------------------
+
+### Printing lists joined with delimiters
+
+`concat (intersperse delimiter list)`:
+
+~~~
+putStr ("Suffixes are:\n\t" ++ (concat (intersperse "\n\t" suffixes)))
+~~~
