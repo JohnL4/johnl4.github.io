@@ -118,6 +118,6 @@ From _RWH_, chapter 8: "The unfamiliar forM function above acts a little like a 
 
 Haskell has a nice FFI aspect, but my personal interests would lie more in the Java realm, if I had to have another
 language in my web server.  This [StackOverflow post](http://stackoverflow.com/questions/9650183/haskell-java-interoperability)
-is a good starting point.  It points to using (JNA)[https://github.com/java-native-access/jna] to access Haskell's FFI,
+is a good starting point.  It points to using [JNA](https://github.com/java-native-access/jna) to access Haskell's FFI,
 so the Java code would be using the Haskell code as a service.  Which makes sense: let Java handle the IO and whatnot
 and let Haskell provide the  intelligence.
