@@ -73,6 +73,65 @@ results to be used in a pure function.
 
 Check back with me later on the accuracy of that statement.
 
+Pattern-matching and guards
+---------------------------
+
+First off, here's the [entire script](/haskell/filterCommonSuffixes.html).
+
+This is one way we introduce conditionals into our program.
+
+The function `filterSuffixes` has both pattern-matching and guards.
+
+### Pattern-matching
+
+That's the stuff that looks like:
+
+~~~
+filterSuffixes [] = []
+filterSuffixes [lastword] = [lastword]
+filterSuffixes (prefix : [lastword])
+filterSuffixes (prefix : nextword : restwords)
+~~~
+
+The idea is that we match the actual arguments against various patterns.  The patterns chosen should cover all the
+possible cases, and we do, in this case.
+
+The first pattern is the case of an empty list.
+
+The second pattern is the case of a list containing exactly one word.
+
+The third, a list containing exactly two words.
+
+> Note that `[]` denotes a *sequence* (list) in Haskell, and `:` is the "cons" operator.  In the expression `x : xs`,
+  `x` is a single element, and `xs` is a *list* of elements (you can think of `x` being pluralized), so the result is a
+  new list with `x` being the first element and all the elements of `xs` being the 2nd and following elements.
+
+The fourth pattern is the case of three or more words.
+
+### Guards
+
+Once you're inside a function, you can also be conditional in terms of the function definition (or, as another way to
+think of it, you can be conditional in terms of what you return).
+
+That looks like this:
+
+~~~
+filterSuffixes (prefix : nextword : restwords)
+  | (hasSuffix prefix nextword)  = filterSuffixes (prefix : restwords)
+  | otherwise                    = prefix : (filterSuffixes (nextword : restwords))
+~~~
+
+The condition is the part between the `|` and the `=`.  `otherwise`, obviously, is your catch-all "else" clause.
+
+### Simple, unconditional function definition
+
+If you don't want any conditionals, your function definition is pretty straightforward:
+
+~~~
+-- | Doubles x.
+f x = 2 * x
+~~~
+
 Various tricks and idioms
 -------------------------
 
