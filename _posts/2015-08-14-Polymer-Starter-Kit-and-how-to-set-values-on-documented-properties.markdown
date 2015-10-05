@@ -1,5 +1,6 @@
 ---
 excerpt: Polymer Starter Kit and how to set values on documented properties
+tags: Polymer
 ---
 
 Polymer Starter Kit and how to set values on documented properties

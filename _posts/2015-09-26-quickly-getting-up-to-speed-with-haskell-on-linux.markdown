@@ -1,5 +1,6 @@
 ---
 excerpt: Quickly getting up to speed with Haskell on your Linux machine
+tags: Haskell
 ---
 Quickly getting up to speed with Haskell on your Linux machine
 ==============================================================

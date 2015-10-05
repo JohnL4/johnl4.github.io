@@ -1,5 +1,6 @@
 ---
 excerpt: I have chosen my backend and frontend technologies (Haskell and Angular/Polymer)
+tags: Polymer, Angular
 ---
 
 I have chosen my backend and frontend technologies (Haskell and Angular/Polymer)

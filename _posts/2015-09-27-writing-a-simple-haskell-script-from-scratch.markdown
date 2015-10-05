@@ -1,5 +1,6 @@
 ---
 excerpt: Writing a simple Haskell script from scratch, given that I've forgotten almost everything over the last few weeks
+tags: Haskell
 ---
 Writing a simple Haskell script from scratch
 ============================================

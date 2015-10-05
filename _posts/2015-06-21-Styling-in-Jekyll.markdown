@@ -1,5 +1,6 @@
 ---
 excerpt: How to get Jekyll to honor the included stylesheets
+tags: Jekyll
 ---
 
 Styling in Jekyll

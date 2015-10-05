@@ -1,5 +1,6 @@
 ---
 excerpt: Moar GitHub Jekyll Learning
+tags: Jekyll
 ---
 
 Moar GitHub Jekyll Learning

@@ -1,5 +1,6 @@
 ---
 excerpt: Jekyll doesn't do RSS. WTF?
+tags: Jekyll
 ---
 
 Jekyll Doesn't Do RSS
