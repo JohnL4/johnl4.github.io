@@ -1,6 +1,6 @@
 ---
 excerpt: Been playing around with Bootstrap. Meh.
-tags: Bootstrap, Polymer, Angular
+tags: Bootstrap, Polymer, Angular, CSS
 ---
 Bootstrap
 =========
