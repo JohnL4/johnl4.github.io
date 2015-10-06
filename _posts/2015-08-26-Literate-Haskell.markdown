@@ -1,5 +1,6 @@
 ---
 excerpt: Making Literate Haskell present nicely
+tags: Haskell
 ---
 Making Literate Haskell present nicely
 ======================================

@@ -1,5 +1,6 @@
 ---
 excerpt: Been playing around with Bootstrap. Meh.
+tags: Bootstrap, Polymer, Angular, CSS
 ---
 Bootstrap
 =========
@@ -68,3 +69,9 @@ becoming:
 
 when the viewport gets narrow enough.
 
+On Sidebars
+-----------
+
+So, based on a quick search, there are lots of sidebars available for Bootstrap, but they don't have
+animation.  At this point, I have to ask myself: why not just use Polymer?  Bootstrap is great for
+simple stuff, but I think I'd rather use Polymer for something more "real".

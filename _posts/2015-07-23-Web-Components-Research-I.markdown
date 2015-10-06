@@ -1,5 +1,6 @@
 ---
 excerpt: Stuff to research as a result of hearing the Web Platform podcast episode on Polymer 1.0
+tags: Polymer
 ---
 
 Stuff to research in connection with Web Components

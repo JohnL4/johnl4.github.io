@@ -1,5 +1,6 @@
 ---
 excerpt: Just found out about SASS (CSS pre-processing)
+tags: CSS
 ---
 
 SASS -- CSS Pre-processing

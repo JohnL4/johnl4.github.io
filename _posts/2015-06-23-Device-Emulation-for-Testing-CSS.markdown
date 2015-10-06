@@ -1,5 +1,6 @@
 ---
 excerpt: Device emulation in Chrome for testing CSS on small screens
+tags: CSS
 ---
 
 So, you can do this:

@@ -1,5 +1,6 @@
 ---
 excerpt: (Re-) Starting out with Haskell
+tags: Haskell
 ---
 
 (Re-) Starting out with Haskell
