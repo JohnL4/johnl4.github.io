@@ -76,7 +76,11 @@ Check back with me later on the accuracy of that statement.
 Pattern-matching and guards
 ---------------------------
 
-First off, here's the [entire script](/haskell/filterCommonSuffixes.html).
+First off, here's the [entire script](/haskell/filterCommonSuffixes.html). (Generated with the following command:)
+
+~~~
+hscolour -css filterCommonSuffixes.hs >| filterCommonSuffixes.html
+~~~
 
 This is one way we introduce conditionals into our program.
 
