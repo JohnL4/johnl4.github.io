@@ -23,6 +23,7 @@ Use four browser features:
 Other things of interest:
 
 * D3 -- graphics in browser -- [http://d3js.org/](http://d3js.org/)
+    * cola.js, a.k.a. "WebCoLa"
 * Postman -- debugging (?)
 * Web Components Tester (automated testing)
 * Tracer
@@ -31,5 +32,6 @@ Other things of interest:
 * Flexbox
 * Firebase
 * Local storage (browser, HTML5?)
+* Offline-first (see Web Platform podcast)
 * Firebase
 * Gradle
