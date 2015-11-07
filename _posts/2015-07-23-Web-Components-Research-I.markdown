@@ -35,3 +35,4 @@ Other things of interest:
 * Offline-first (see Web Platform podcast)
 * Firebase
 * Gradle
+* jQuery, honestly, in spite of its age
