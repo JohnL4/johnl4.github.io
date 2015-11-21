@@ -36,6 +36,29 @@ with the pieces.  The first thing I look for is a "split" operator.  In Haskell,
 [splitOn](http://hackage.haskell.org/package/text-1.2.1.3/docs/Data-Text.html#v:splitOn).  You can see it used
 around line 61 of the `mostFrequent.hs` script.
 
+regular expressions
+-------------------
+
+See [this StackOverflow post](http://stackoverflow.com/a/32150031/370611).
+
+Also, this looks like a good basic post on the topic:
+[http://www.serpentine.com/blog/2007/02/27/a-haskell-regular-expression-tutorial/](http://www.serpentine.com/blog/2007/02/27/a-haskell-regular-expression-tutorial/)
+
+In my dumb script, I used regular expressions in a boolean ("match?") to filter out Roman numerals, like this:
+
+~~~
+romanNumeral :: Regex
+romanNumeral = makeRegexOpts defaultCompOpt{multiline=False} defaultExecOpt "^[ivxlc]+$"
+-- ...
+in if (year < aYear)
+      || (ngramRole == "DET") -- Skip "determiners" (words like "a", "an", "the")
+      || ((length ngram) < 3)  -- Two-letter words
+      || (match romanNumeral ngram) -- Also need to eliminate Roman numerals: [ivxlc]+ (not using
+                                    -- "m" because "mix" is a real word)
+~~~
+
+(Hopefully, there won't be a bunch of dates, like MCMLXXXIV.)
+
 `!!` to select array elements
 -----------------------------
 
