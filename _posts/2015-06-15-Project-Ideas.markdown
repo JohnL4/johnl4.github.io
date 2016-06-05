@@ -7,6 +7,10 @@ Some Project Ideas
 
 * First National Bank of Dad
 * Points system: Every hour: On Task, Speaks Nicely, Follows Directions
+    * Simple status display for kid (today, this week, totals so far, nice colored grid)
+    * Similar display for parent/administrator, with ability to toggle a particular cell to earned, unearned, unknown [,
+      unavailable?]
+    * Ability to log free-text why a point was unearned.
 * Math Drill 2
 * Diaspora cluster generator
     * Clickable image generated with dot (or D3)
